@@ -33,7 +33,7 @@ public class Gravity : MonoBehaviour
     {
         Rigidbody otherRb = other.rb;
 
-        Vector3 direction = otherRb.position - rb.position;
+        Vector3 direction = rb.position - otherRb.position;
 
         float distance = direction.magnitude;
 
